@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+    --font_Inter: "Inter", sans-serif;
+}
+
+body{
+    background-color: var(--Grey-900);
+    font-size: 14px;
+    font-family: var(--font_Inter);
+    font-weight: 400;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    background-color: var(--Grey-800);
+    padding: 2rem ;
+    border-radius: 5px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    border-radius: 50%;
+    width: 30%;
+}
+h1{
+    font-size: 1.5rem;
+    color: var(--White);
+    margin-top: 1.3em;
+    font-weight: 700;
+}
+#address{
+    color: var(--Green);
+    margin: 0 0 1.5em 0;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+#title{
+    color: var(--White);
+    font-size: 1.1em;
+    margin-bottom: 2em;
+}
+.linksContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 90%;
+}
+a{
+    background-color: var(--Grey-700);
+    padding: 1em 0;
+    width: 100%;
+    text-align: center;
+    color: var(--White);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+a:hover{
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
+@media screen and (max-width: 500px) {
+    body{
+        font-size: 10px;
+    }
+    .wrapper{
+        width: 90%;
+    }
+    img{
+        width: 20%;
+    }
+    p{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 900px) {
+    .wrapper{
+        width: 60%;
+    }
+    img{
+        width: 20%;
+    }
+}
+@media screen and (min-width: 1023px){
+    .wrapper{
+        width: 40%;
+    }
+    img{
+        width: 20%;
+    }
+}
